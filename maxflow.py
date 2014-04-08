@@ -1,3 +1,4 @@
+#!/bin/python2
 import pysal as ps
 import numpy as np
 import networkx as nx
