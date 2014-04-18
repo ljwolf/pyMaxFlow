@@ -102,7 +102,7 @@ def maxflow(startgraph, resgraph, caps, start, end):
         try:
             splist = nx.shortest_path(resgraph, start, end)
         except:
-            print '\t\tno connectivity!\n\t\tcut complete!'
+            print '\t\tno connectivity at ',it ,'!\n\t\t\tcut complete!'
             break #termination criteria met: minimal cut achieved!
         
         #get capacities of current shortest path
